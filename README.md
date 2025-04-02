@@ -1,4 +1,4 @@
-# 🚗 Data Pipeline de Accidentes para Análisis de Riesgo en Seguros
+# Data Pipeline de Accidentes para Análisis de Riesgo en Seguros
 
 Este proyecto implementa un pipeline completo de Ingeniería de Datos para analizar datos reales de accidentes de tránsito con el objetivo de identificar zonas de alto riesgo, patrones temporales y tipos de vehículos más afectados. Es ideal para su uso por parte de aseguradoras en el ajuste dinámico de pólizas o políticas de prevención.
 
@@ -33,41 +33,18 @@ API pública del Gobierno de Nueva York:
 
 ---
 
-## 🏗️ Arquitectura del Proyecto
-
-```
-  A[API NYC Accidentes] --> B[Airflow DAG]
-  B --> C[almacenamiento local (raw data)]
-  C --> D[Transformación con PySpark]
-  D --> E[PostgreSQL]
-  E --> F[Power BI Dashboard]
-```
-
----
-
 ## ⚙️ Stack Tecnológico
 ```
 | Componente        | Tecnología                             |
-|-------------------|-----------------------------------------|
+|-------------------|----------------------------------------|
 | Lenguaje          | Python, SQL                            |
 | Ingesta API       | requests, pandas                       |
-| ETL               | pandas / PySpark                       |
+| ETL               | pandas                                 |
 | Orquestación      | Apache Airflow                         |
 | Almacenamiento    | PostgreSQL                             |
 | Visualización     | Power BI                               |
 | Infraestructura   | Docker, Git                            |
 ```
----
-
-## 📊 KPIs Visualizados en Power BI
-
-- Accidentes por calle / barrio.
-- Accidentes por tipo de vehículo.
-- Horarios con mayor siniestralidad.
-- Mapa geolocalizado de incidentes.
-- Comparativas mensuales / semanales.
-- Cantidad de heridos / fallecidos.
-
 ---
 
 ## 🚀 Cómo Ejecutar el Proyecto
@@ -106,10 +83,10 @@ docker-compose up -d
 ```
 | Métrica                                | Resultado estimado                     |
 |----------------------------------------|----------------------------------------|
-| Datos procesados diarios               | +10,000 registros                      |
+| Datos procesados diarios               | +1,000,000 registros                   |
 | Tiempo de ingesta y carga              | < 1 hora por ejecución                 |
 | Reducción de tiempo de reportes        | 80% menos vs. carga manual             |
-| KPI disponibles                        | +6 métricas clave para análisis de riesgo |
+| KPI disponibles                     | +6 métricas clave para análisis de riesgo |
 | Automatización                         | 100% orquestado con Airflow           |
 ```
 ---
