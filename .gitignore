@@ -1,0 +1,50 @@
+# Entorno virtual de Python
+.venv/
+.env
+
+# Archivos de Python compilados
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Archivos temporales de logs y caché
+*.log
+*.tmp
+*.bak
+logs/
+scheduler/
+dag_processor_manager/
+
+# Archivos CSV o datos que pueden regenerarse
+data/*.csv
+
+# Airflow
+airflow.cfg
+unittests.cfg
+*.pid
+
+# Docker
+docker/airflow/logs/
+docker/airflow/dags/__pycache__/
+docker/airflow/plugins/__pycache__/
+
+# Power BI
+*.pbix
+*.pbix~  # versiones temporales
+
+# Dependencias o lock files de entorno
+poetry.lock
+Pipfile.lock
+*.lock
+
+# Configuración de VSCode (opcional si compartes configuración)
+.vscode/
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de prueba y notebooks temporales
+*.ipynb_checkpoints
+tests/__pycache__/
