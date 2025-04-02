@@ -70,6 +70,13 @@ pip install -r requirements.txt
 cd docker/
 docker-compose up -d
 ```
+---
+
+## 4. Configura tus credenciales en .env
+
+Es importante para su funcionamiento!
+
+---
 
 ### 4. Visualizar los datos
 
