@@ -53,7 +53,7 @@ API pública del Gobierno de Nueva York:
 
 ```bash
 git clone https://github.com/trismald/NYC-Accident-Insights
-cd accidents-insurance-pipeline
+cd NYC-Accident-Insights
 ```
 
 ### 2. Crear entorno virtual e instalar dependencias
