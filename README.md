@@ -52,7 +52,7 @@ API pública del Gobierno de Nueva York:
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/tu-usuario/accidents-insurance-pipeline.git
+git clone https://github.com/trismald/NYC-Accident-Insights
 cd accidents-insurance-pipeline
 ```
 
